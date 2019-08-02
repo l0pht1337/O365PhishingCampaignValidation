@@ -4,13 +4,6 @@ import requests
 import math
 import argparse
 
-parser = argparse.ArgumentParser(
-    description="Office 365 'Xerox' Campaign Validation Script @littl3field"
-)
-
-parser.add_argument('QUERY', help="Query a user or domain")
-args = parser.parse_args()
-
 def textRequest():
     result = []
     with open('urls.txt', 'r') as r:
@@ -43,7 +36,7 @@ def check(query_arg):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Office 365 'Xerox' Campaign Validation Script"
+        description="Office 365 'Xerox' Campaign Validation Script @littl3field"
     )
 
     parser.add_argument('QUERY', help="Query a user or domain")
